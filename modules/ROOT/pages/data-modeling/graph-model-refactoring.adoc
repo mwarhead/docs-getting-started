@@ -304,7 +304,6 @@ MATCH (airline:Airline)<-[:AIRLINE]-(:Flight)
 RETURN airline.name AS airline, count(*) AS numberOfFlights
 ----
 
-This does the same as the previous query, but the outer Cypher query uses the `apoc.refactor.extractNode` procedure to create the `Flight` node and create relationships to origin and destination airports.
 If we run this query we'll see the following output:
 
 .Results
